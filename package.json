@@ -1,6 +1,7 @@
 {
   "name": "project1",
   "version": "0.1.0",
+  "homepage": "http://moein1997.github.io/firstReactDeployment",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -19,6 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"gh-pages -d build",
+    "deploy":"npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
