@@ -48,7 +48,7 @@ function App() {
       <button onClick={setIsVisible}>
         {isVisible? "Hide":"Show"}
       </button>
-      {isVisible && <h1>This is my hidden text</h1>}
+      {isVisible && <h1>Hi! This is my hidden text</h1>}
     </div>
   )
 
