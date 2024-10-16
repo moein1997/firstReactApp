@@ -2,7 +2,10 @@
 // import styles from './App.css';
 // import { useState } from "react"
 import "./App.css"
-import { useToggle } from "./Components/useToggle";
+// import {Cat}  from "./Components/Cat";
+// import { QueryClient,QueryClientProvider } from "react-query";
+
+// import { useToggle } from "./Components/useToggle";
 // import  SubmitForm from "./Components/SubmitForm";
 
 // import Job from './Job';
@@ -41,16 +44,37 @@ import { useToggle } from "./Components/useToggle";
 
 function App() {
 
-  const [isVisible,setIsVisible] = useToggle(true);
+  // const queryClient = new QueryClient();
 
-  return(
-    <div className="App">
-      <button onClick={setIsVisible}>
-        {isVisible? "Hide":"Show"}
-      </button>
-      {isVisible && <h1>Hi! This is my hidden text</h1>}
-    </div>
-  )
+  // return (
+  //   <QueryClientProvider client={queryClient}>
+  //     <div className="App">
+  //       <Cat />
+  //     </div>
+  //   </QueryClientProvider>
+  // );
+
+  // // const [isVisible,setIsVisible] = useToggle(true);
+
+  // // const [isVisible2,setIsVisible2] = useToggle(true);
+
+  // const {state:isVisible,toggle:setIsVisible} = useToggle(true);
+
+  // const {state:isVisible2,toggle:setIsVisible2} = useToggle(true);
+
+  // return(
+  //   <div className="App">
+  //     <button onClick={setIsVisible}>
+  //       {isVisible? "Hide":"Show"}
+  //     </button>
+  //     {isVisible && <h1>Hi! This is my first hidden text</h1>}
+
+  //     <button onClick={setIsVisible2}>
+  //       {isVisible2? "Hide":"Show"}
+  //     </button>
+  //     {isVisible2 && <h1>Hi! This is my second hidden text</h1>}
+  //   </div>
+  // )
 
   // return(
   //   <div>
