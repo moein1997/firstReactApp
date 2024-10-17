@@ -2,6 +2,7 @@
 // import styles from './App.css';
 // import { useState } from "react"
 import "./App.css"
+import ClassBaseTestComponent from "./classBaseTestComponent";
 // import {Cat}  from "./Components/Cat";
 // import { QueryClient,QueryClientProvider } from "react-query";
 
@@ -43,11 +44,8 @@ import "./App.css"
 // export const ProfileContex = createContext()
 
 function App() {
-  return(
-    <div>
-      <h1>My name is Moein</h1>
-    </div>
-  )
+  
+  <ClassBaseTestComponent/>
 
   // const queryClient = new QueryClient();
 
