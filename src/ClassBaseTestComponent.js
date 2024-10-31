@@ -5,7 +5,7 @@ class ClassBaseTestComponent extends Component {
     render(){
         return(
             <div>
-                <h1>My name is Moein</h1>
+                <h1>My name is Moein Azizi</h1>
             </div>
         );
     }
