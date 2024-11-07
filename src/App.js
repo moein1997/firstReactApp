@@ -2,7 +2,8 @@
 // import styles from './App.css';
 // import { useState } from "react"
 import "./App.css"
-import { Fact } from "./Fact";
+import { Form } from "./Form";
+// import { Fact } from "./Fact";
 // import ClassBaseTestComponent from "./ClassBaseTestComponent";
 // import {Cat}  from "./Components/Cat";
 // import { QueryClient,QueryClientProvider } from "react-query";
@@ -46,11 +47,17 @@ import { Fact } from "./Fact";
 
 function App() {
 
-  return(
+  return (
     <>
-      <Fact/>
+        <Form />
     </>
-  )
+);
+
+  // return(
+  //   <>
+  //     <Fact/>
+  //   </>
+  // )
   
   // return(
   //   <>
