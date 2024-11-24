@@ -1,8 +1,18 @@
 // import logo from './logo.svg';
 // import styles from './App.css';
 // import { useState } from "react"
+// import { Link, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import "./App.css"
-import { Form } from "./Form";
+
+import Home from "./pagesnew/Home";
+import Contact from "./pagesnew/Contact";
+import Login from "./pagesnew/Login";
+
+import {Provider} from "react-redux"
+import { store } from "./Store";
+
+// import { Form } from "./Form";
 // import { Fact } from "./Fact";
 // import ClassBaseTestComponent from "./ClassBaseTestComponent";
 // import {Cat}  from "./Components/Cat";
@@ -48,10 +58,29 @@ import { Form } from "./Form";
 function App() {
 
   return (
-    <>
-        <Form />
-    </>
-);
+    <div className="App">
+      <Provider store={store}>
+        <Router>
+          <nav>
+            <Link to="/">Home</Link> | 
+            <Link to="/login">Login</Link> | 
+            <Link to="/contact">Contact</Link>
+          </nav>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Router>
+      </Provider>
+    </div>
+  );
+
+//   return (
+//     <>
+//         <Form />
+//     </>
+// );
 
   // return(
   //   <>
