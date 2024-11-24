@@ -2,15 +2,16 @@
 // import styles from './App.css';
 // import { useState } from "react"
 // import { Link, Route, Router, Routes } from "react-router-dom";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import "./App.css"
+import { Person } from "./Person";
 
-import Home from "./pagesnew/Home";
-import Contact from "./pagesnew/Contact";
-import Login from "./pagesnew/Login";
+// import Home from "./pagesnew/Home";
+// import Contact from "./pagesnew/Contact";
+// import Login from "./pagesnew/Login";
 
-import {Provider} from "react-redux"
-import { store } from "./Store";
+// import {Provider} from "react-redux"
+// import { store } from "./Store";
 
 // import { Form } from "./Form";
 // import { Fact } from "./Fact";
@@ -57,24 +58,36 @@ import { store } from "./Store";
 
 function App() {
 
-  return (
-    <div className="App">
-      <Provider store={store}>
-        <Router>
-          <nav>
-            <Link to="/">Home</Link> | 
-            <Link to="/login">Login</Link> | 
-            <Link to="/contact">Contact</Link>
-          </nav>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </Router>
-      </Provider>
+  return(
+    <div>
+      <Person
+      name = {"Moein"}
+      email = {"moein.azizi1997@gmail.com"}
+      age = {27}
+      isMarried = {false}
+      courses = {["react","mysql","python"]}
+      />
     </div>
   );
+
+  // return (
+  //   <div className="App">
+  //     <Provider store={store}>
+  //       <Router>
+  //         <nav>
+  //           <Link to="/">Home</Link> | 
+  //           <Link to="/login">Login</Link> | 
+  //           <Link to="/contact">Contact</Link>
+  //         </nav>
+  //         <Routes>
+  //           <Route path="/" element={<Home />} />
+  //           <Route path="/login" element={<Login />} />
+  //           <Route path="/contact" element={<Contact />} />
+  //         </Routes>
+  //       </Router>
+  //     </Provider>
+  //   </div>
+  // );
 
 //   return (
 //     <>
